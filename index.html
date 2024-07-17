@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>To Do List App</title>
+</head>
+<body>
+  <div class="container">
+    <section id="section">
+      <div class="title">
+        <p>Today's To Do List</p>
+        <div id="refresh"><i class="fa-solid fa-arrows-rotate"></i></div>
+      </div>
+      <div class="form-container">
+        <div class="form-text">
+          <form action="">
+            <input type="text" class="text" placeholder="Add to your list..." required />
+            <button type="submit" class="add-btn"><i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+          </form>
+        </div>
+      </div>
+      <ul id="list"></ul>
+      <button class="clear" type="button">Clear all completed</button>
+    </section>
+  </div>
+  <script src="./index.js" type="module"></script>
+</body>
+</html>
